@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>1.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a6abc8;}
+.s1 { color: #b4c2f0;}
+.s2 { color: #7fdaff;}
+.s3 { color: #baacff; font-style: italic;}
+.s4 { color: #baacff;}
+.s5 { color: #ff9668;}
+.s6 { color: #7af8ca;}
+</style>
+</head>
+<body bgcolor="#222436">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+1.js</font>
+</center></td></tr></table>
+<pre>
+  <span class="s0">removeEdge</span><span class="s1">(</span><span class="s0">a</span><span class="s1">, </span><span class="s0">b</span><span class="s1">) </span><span class="s2">{</span>
+    <span class="s3">let </span><span class="s0">x </span><span class="s4">= </span><span class="s3">this</span><span class="s1">.</span><span class="s0">adjacencyList</span><span class="s2">[</span><span class="s0">a</span><span class="s2">]</span><span class="s1">.</span><span class="s0">indexOf</span><span class="s1">(</span><span class="s0">b</span><span class="s1">);</span>
+    <span class="s3">this</span><span class="s1">.</span><span class="s0">adjacencyList</span><span class="s2">[</span><span class="s0">a</span><span class="s2">]</span><span class="s1">.</span><span class="s0">splice</span><span class="s1">(</span><span class="s0">x</span><span class="s1">, </span><span class="s5">1</span><span class="s1">);</span>
+    <span class="s0">x </span><span class="s4">= </span><span class="s3">this</span><span class="s1">.</span><span class="s0">adjacencyList</span><span class="s2">[</span><span class="s0">b</span><span class="s2">]</span><span class="s1">.</span><span class="s0">indexOf</span><span class="s1">(</span><span class="s0">a</span><span class="s1">);</span>
+    <span class="s3">this</span><span class="s1">.</span><span class="s0">adjacencyList</span><span class="s2">[</span><span class="s0">b</span><span class="s2">]</span><span class="s1">.</span><span class="s0">splice</span><span class="s1">(</span><span class="s0">x</span><span class="s1">, </span><span class="s5">1</span><span class="s1">);</span>
+    <span class="s3">return this</span><span class="s1">;</span>
+  <span class="s2">}</span></pre>
+</body>
+</html>
